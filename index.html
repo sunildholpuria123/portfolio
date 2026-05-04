@@ -1,72 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunil Dholpuria | Lead Android Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #e2e8f0;
+    --accent: #38bdf8;
+}
+
+.light {
+    --bg: #ffffff;
+    --card: #f1f5f9;
+    --text: #0f172a;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--card);
+}
+
+nav button {
+    background: var(--accent);
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+}
+
+.hero h1 {
+    color: var(--accent);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: var(--accent);
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* SECTION */
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+    border: 1px solid #334155;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.meta {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.highlight {
+    background: rgba(56,189,248,0.1);
+    padding: 10px;
+    border-left: 3px solid var(--accent);
+    margin: 10px 0;
+}
+
+.tech {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--accent);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <b>Sunil Dholpuria</b>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+</nav>
+
+<section class="hero">
+    <img src="profile.jpg">
+    <h1>Lead Android Developer</h1>
+    <p>10 Years | Fintech | HDFC Bank | Remote Ready</p>
+    <a class="btn" href="Sunil_Dholpuria_Resume.pdf">Download Resume</a>
+</section>
+
+<section class="section">
+    <h2>About Me</h2>
+    <div class="card">
+        Lead Android Developer with 10 years of experience in fintech, healthcare, travel, and enterprise apps.
+        Worked with HDFC Bank on secure loan systems and built analytics SDK.
+    </div>
+</section>
+
 <section class="section">
     <h2>Projects & Client Work</h2>
+
     <div class="grid">
 
         <div class="card">
-            <h3>🏦 TAP4LAP – Loan Against Property Platform</h3>
-            <p><b>Organization:</b> Clover Infotech</p>
-            <p><b>Client:</b> HDFC Bank</p>
-            <p><b>Role:</b> Lead Android Developer</p>
-            <p><b>Problem:</b> Manual loan processing and RM inefficiency</p>
-            <p><b>Solution:</b> Built secure Android app for loan onboarding (LAP, DOD, LCP)</p>
-            <p><b>Impact:</b> Used by 1000+ RMs, improved processing efficiency by ~40%</p>
-            <p><b>Tech:</b> Java, MVVM, Encryption, REST APIs</p>
+            <h3>🏦 TAP4LAP – Fintech App</h3>
+            <p class="meta">Clover Infotech | HDFC Bank</p>
+            <div class="highlight">Used by 1000+ RMs for loan processing</div>
+            <ul>
+                <li>LAP, DOD, LCP modules</li>
+                <li>Encryption implemented</li>
+                <li>40% efficiency improvement</li>
+            </ul>
+            <div class="tech">Java • MVVM • Encryption</div>
         </div>
 
         <div class="card">
-            <h3>📊 Analytics & Crash Reporting SDK</h3>
-            <p><b>Organization:</b> Clover Infotech</p>
-            <p><b>Client:</b> Internal Product (HDFC ecosystem)</p>
-            <p><b>Role:</b> SDK Developer</p>
-            <p><b>Problem:</b> Lack of real-time crash insights</p>
-            <p><b>Solution:</b> Built reusable Android SDK for analytics & crash tracking</p>
-            <p><b>Impact:</b> Reduced debugging time by ~40%, improved stability</p>
-            <p><b>Tech:</b> Java/Kotlin, Logging, API Sync</p>
+            <h3>📊 Analytics SDK</h3>
+            <p class="meta">Clover Infotech</p>
+            <div class="highlight">Custom crash + analytics SDK</div>
+            <ul>
+                <li>95% crash tracking</li>
+                <li>40% faster debugging</li>
+            </ul>
+            <div class="tech">Kotlin • Logging</div>
         </div>
 
         <div class="card">
-            <h3>🌐 TAP4LAP Admin Portal</h3>
-            <p><b>Organization:</b> Clover Infotech</p>
-            <p><b>Client:</b> HDFC Bank</p>
-            <p><b>Role:</b> Flutter Web Developer</p>
-            <p><b>Problem:</b> Manual proposal management</p>
-            <p><b>Solution:</b> Built admin dashboard for proposal reset & reports</p>
-            <p><b>Impact:</b> Reduced manual work by ~50%</p>
-            <p><b>Tech:</b> Flutter Web, REST APIs</p>
+            <h3>🌐 Admin Portal</h3>
+            <p class="meta">Clover Infotech | HDFC Bank</p>
+            <div class="highlight">Proposal management system</div>
+            <ul>
+                <li>1000+ proposals/month</li>
+                <li>50% manual reduction</li>
+            </ul>
+            <div class="tech">Flutter Web</div>
         </div>
 
         <div class="card">
-            <h3>🚢 Disney Cruise Line App</h3>
-            <p><b>Organization:</b> Capgemini</p>
-            <p><b>Client:</b> Disney</p>
-            <p><b>Role:</b> Android Developer</p>
-            <p><b>Problem:</b> Improve cruise experience digitally</p>
-            <p><b>Solution:</b> Developed features for booking, scheduling, onboard services</p>
-            <p><b>Impact:</b> Used globally by cruise users</p>
-            <p><b>Tech:</b> Kotlin, Java, Flutter Module</p>
+            <h3>🚢 Disney Cruise App</h3>
+            <p class="meta">Capgemini | Disney</p>
+            <div class="highlight">Global cruise service app</div>
+            <ul>
+                <li>Booking & scheduling</li>
+                <li>Flutter module integration</li>
+            </ul>
+            <div class="tech">Kotlin • Java</div>
         </div>
 
         <div class="card">
-            <h3>🏨 ASR (Ascott Star Rewards)</h3>
-            <p><b>Organization:</b> Hexaware Technologies</p>
-            <p><b>Client:</b> Ascott</p>
-            <p><b>Role:</b> Lead Android Developer</p>
-            <p><b>Problem:</b> Hotel booking experience improvement</p>
-            <p><b>Solution:</b> Built scalable booking app with MVVM architecture</p>
-            <p><b>Impact:</b> Improved user experience and performance</p>
-            <p><b>Tech:</b> Kotlin, MVVM, Hilt</p>
+            <h3>🏨 ASR App</h3>
+            <p class="meta">Hexaware | Ascott</p>
+            <div class="highlight">Hotel booking platform</div>
+            <ul>
+                <li>MVVM architecture</li>
+                <li>Performance optimized</li>
+            </ul>
+            <div class="tech">Kotlin • Hilt</div>
         </div>
 
         <div class="card">
-            <h3>💊 Medicalwale App</h3>
-            <p><b>Organization:</b> Inspire Infotech</p>
-            <p><b>Client:</b> Product-based</p>
-            <p><b>Role:</b> Android Developer</p>
-            <p><b>Problem:</b> Unified healthcare access</p>
-            <p><b>Solution:</b> Developed healthcare app with chat, video, and services</p>
-            <p><b>Impact:</b> 10K+ downloads</p>
-            <p><b>Tech:</b> Java, Firebase, APIs</p>
+            <h3>💊 Medicalwale</h3>
+            <p class="meta">Inspire Infotech</p>
+            <div class="highlight">Healthcare app</div>
+            <ul>
+                <li>10K+ downloads</li>
+                <li>Chat + video features</li>
+            </ul>
+            <div class="tech">Java • Firebase</div>
         </div>
 
     </div>
 </section>
+
+<section class="section">
+    <h2>Skills</h2>
+    <div class="card">
+        Kotlin, Java, Android, Compose, MVVM, Hilt, Retrofit, Room, Firebase,
+        New Relic, Jenkins, JIRA, Azure DevOps
+    </div>
+</section>
+
+<section class="section">
+    <h2>Domains</h2>
+    <div class="card">
+        Fintech, Travel, Healthcare, Messaging, Astrology, Government, Fitness
+    </div>
+</section>
+
+<section class="section">
+    <h2>Contact</h2>
+    <div class="card">
+        Email: sunildholpuria123@gmail.com <br>
+        LinkedIn: linkedin.com/in/sunil-dholpuria
+    </div>
+</section>
+
+<footer>
+    © 2026 Sunil Dholpuria
+</footer>
+
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>

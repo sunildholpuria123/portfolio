@@ -1,205 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sunil Dholpuria | Lead Android Engineer</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-:root {
-    --bg: #0f172a;
-    --card: #1e293b;
-    --text: #e2e8f0;
-    --accent: #38bdf8;
-}
-
-.light {
-    --bg: #ffffff;
-    --card: #f1f5f9;
-    --text: #0f172a;
-}
-
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    transition: 0.3s;
-}
-
-/* NAV */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: var(--card);
-}
-
-nav button {
-    background: none;
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    padding: 6px 10px;
-    cursor: pointer;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h1 {
-    font-size: 42px;
-    color: var(--accent);
-}
-
-.hero p {
-    opacity: 0.8;
-}
-
-/* SECTION */
-.section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-/* CARD */
-.card {
-    background: var(--card);
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 12px;
-    transform: translateY(20px);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.card.show {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-/* BUTTON */
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px;
-    background: var(--accent);
-    color: black;
-    text-decoration: none;
-    border-radius: 6px;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    opacity: 0.6;
-}
-</style>
-</head>
-
-<body>
-
-<nav>
-    <div><b>Sunil</b></div>
-    <button onclick="toggleTheme()">Toggle Theme</button>
-</nav>
-
-<section class="hero">
-    <h1>Lead Android Engineer</h1>
-    <p>10 Years | Fintech | Kotlin | Compose | Remote Ready</p>
-    <a class="btn" href="Sunil_Dholpuria_Resume.pdf">Download Resume</a>
-</section>
-
 <section class="section">
-    <h2>About</h2>
-    <div class="card">
-        Experienced Android Lead with strong expertise in fintech systems, secure architecture, and SDK development.
-    </div>
-</section>
-
-<section class="section">
-    <h2>Projects</h2>
+    <h2>Projects & Client Work</h2>
     <div class="grid">
 
         <div class="card">
-            <h3>🏦 Fintech Loan App</h3>
-            <p><b>Problem:</b> Secure loan processing</p>
-            <p><b>Solution:</b> MVVM + Encryption</p>
-            <a class="btn" href="#">GitHub</a>
+            <h3>🏦 TAP4LAP – Loan Against Property Platform</h3>
+            <p><b>Organization:</b> Clover Infotech</p>
+            <p><b>Client:</b> HDFC Bank</p>
+            <p><b>Role:</b> Lead Android Developer</p>
+            <p><b>Problem:</b> Manual loan processing and RM inefficiency</p>
+            <p><b>Solution:</b> Built secure Android app for loan onboarding (LAP, DOD, LCP)</p>
+            <p><b>Impact:</b> Used by 1000+ RMs, improved processing efficiency by ~40%</p>
+            <p><b>Tech:</b> Java, MVVM, Encryption, REST APIs</p>
         </div>
 
         <div class="card">
-            <h3>📊 Analytics SDK</h3>
-            <p><b>Problem:</b> Crash tracking</p>
-            <p><b>Solution:</b> Custom SDK</p>
-            <a class="btn" href="#">GitHub</a>
+            <h3>📊 Analytics & Crash Reporting SDK</h3>
+            <p><b>Organization:</b> Clover Infotech</p>
+            <p><b>Client:</b> Internal Product (HDFC ecosystem)</p>
+            <p><b>Role:</b> SDK Developer</p>
+            <p><b>Problem:</b> Lack of real-time crash insights</p>
+            <p><b>Solution:</b> Built reusable Android SDK for analytics & crash tracking</p>
+            <p><b>Impact:</b> Reduced debugging time by ~40%, improved stability</p>
+            <p><b>Tech:</b> Java/Kotlin, Logging, API Sync</p>
         </div>
 
         <div class="card">
-            <h3>⚡ Performance App</h3>
-            <p><b>Problem:</b> Slow UI</p>
-            <p><b>Solution:</b> Optimization + caching</p>
-            <a class="btn" href="#">GitHub</a>
+            <h3>🌐 TAP4LAP Admin Portal</h3>
+            <p><b>Organization:</b> Clover Infotech</p>
+            <p><b>Client:</b> HDFC Bank</p>
+            <p><b>Role:</b> Flutter Web Developer</p>
+            <p><b>Problem:</b> Manual proposal management</p>
+            <p><b>Solution:</b> Built admin dashboard for proposal reset & reports</p>
+            <p><b>Impact:</b> Reduced manual work by ~50%</p>
+            <p><b>Tech:</b> Flutter Web, REST APIs</p>
         </div>
 
         <div class="card">
-            <h3>🌐 Admin Portal</h3>
-            <p><b>Problem:</b> Manual processing</p>
-            <p><b>Solution:</b> Flutter web dashboard</p>
-            <a class="btn" href="#">GitHub</a>
+            <h3>🚢 Disney Cruise Line App</h3>
+            <p><b>Organization:</b> Capgemini</p>
+            <p><b>Client:</b> Disney</p>
+            <p><b>Role:</b> Android Developer</p>
+            <p><b>Problem:</b> Improve cruise experience digitally</p>
+            <p><b>Solution:</b> Developed features for booking, scheduling, onboard services</p>
+            <p><b>Impact:</b> Used globally by cruise users</p>
+            <p><b>Tech:</b> Kotlin, Java, Flutter Module</p>
+        </div>
+
+        <div class="card">
+            <h3>🏨 ASR (Ascott Star Rewards)</h3>
+            <p><b>Organization:</b> Hexaware Technologies</p>
+            <p><b>Client:</b> Ascott</p>
+            <p><b>Role:</b> Lead Android Developer</p>
+            <p><b>Problem:</b> Hotel booking experience improvement</p>
+            <p><b>Solution:</b> Built scalable booking app with MVVM architecture</p>
+            <p><b>Impact:</b> Improved user experience and performance</p>
+            <p><b>Tech:</b> Kotlin, MVVM, Hilt</p>
+        </div>
+
+        <div class="card">
+            <h3>💊 Medicalwale App</h3>
+            <p><b>Organization:</b> Inspire Infotech</p>
+            <p><b>Client:</b> Product-based</p>
+            <p><b>Role:</b> Android Developer</p>
+            <p><b>Problem:</b> Unified healthcare access</p>
+            <p><b>Solution:</b> Developed healthcare app with chat, video, and services</p>
+            <p><b>Impact:</b> 10K+ downloads</p>
+            <p><b>Tech:</b> Java, Firebase, APIs</p>
         </div>
 
     </div>
 </section>
-
-<section class="section">
-    <h2>Skills</h2>
-    <div class="card">
-        Kotlin, Java, Android, Compose, MVVM, Hilt, Retrofit, Room, Firebase, Jenkins, New Relic
-    </div>
-</section>
-
-<section class="section">
-    <h2>Contact</h2>
-    <div class="card">
-        sunildholpuria123@gmail.com <br>
-        LinkedIn: linkedin.com/in/sunil-dholpuria
-    </div>
-</section>
-
-<footer>
-    © 2026 Sunil Dholpuria
-</footer>
-
-<script>
-function toggleTheme() {
-    document.body.classList.toggle("light");
-}
-
-// Scroll animation
-const cards = document.querySelectorAll('.card');
-window.addEventListener('scroll', () => {
-    cards.forEach(card => {
-        const rect = card.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 50) {
-            card.classList.add('show');
-        }
-    });
-});
-</script>
-
-</body>
-</html>
